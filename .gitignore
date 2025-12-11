@@ -1,0 +1,39 @@
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+
+# 编辑器配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 临时文件
+*.tmp
+*.temp
+
+# 环境变量文件
+.env
+.env.local
+.env.production
+
+# 编译输出目录（如果使用构建工具）
+dist/
+build/
+
+# 依赖目录（如果使用npm等包管理器）
+node_modules/
+
+# Python相关文件
+__pycache__/
+*.pyc
+
+# 其他不需要版本控制的文件
+.cache/
+.ftpquota
+.htaccess
+.htpasswd
