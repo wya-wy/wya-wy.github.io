@@ -3,106 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人网站 - 项目展示</title>
+    <title>飞行紧急情况模拟系统 - 官方网站</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- 导航栏 -->
+    <header class="navbar">
         <div class="container">
-            <h1>我的个人网站</h1>
+            <div class="navbar-content">
+                <a href="#" class="logo">
+                    <span class="logo-icon">
+                        <i class="fas fa-plane"></i>
+                    </span>
+                    <span class="logo-text">FlightSim Pro</span>
+                </a>
+                
+                <!-- 桌面导航 -->
+                <nav class="nav-links">
+                    <a href="#home">首页</a>
+                    <a href="#overview">项目概述</a>
+                    <a href="#scenarios">应用场景</a>
+                    <a href="#features">核心功能</a>
+                    <a href="#tech">技术亮点</a>
+                    <a href="#demo">演示中心</a>
+                </nav>
+                
+                <!-- 移动端汉堡菜单 -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div class="mobile-menu">
             <nav>
-                <ul>
-                    <li><a href="#home">首页</a></li>
-                    <li><a href="#projects">项目</a></li>
-                    <li><a href="#about">关于我</a></li>
-                    <li><a href="#contact">联系方式</a></li>
-                </ul>
+                <a href="#home">首页</a>
+                <a href="#overview">项目概述</a>
+                <a href="#scenarios">应用场景</a>
+                <a href="#features">核心功能</a>
+                <a href="#tech">技术亮点</a>
+                <a href="#demo">演示中心</a>
             </nav>
         </div>
     </header>
 
+    <!-- 首页Hero区 -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="flight-animation"></div>
+            <div class="dashboard-overlay"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <h2>欢迎访问我的个人网站</h2>
-                <p>我是一名开发者，专注于前端和后端技术。这里展示了我的一些项目和成果。</p>
-                <a href="#projects" class="btn">查看项目</a>
+                <h1>飞行紧急情况模拟系统</h1>
+                <p>安全环境下，掌握极端场景的决策与操作</p>
+                <div class="hero-buttons">
+                    <a href="#features" class="btn primary-btn">了解功能</a>
+                    <a href="#demo" class="btn secondary-btn">观看演示</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <!-- 项目概述板块 -->
+    <section id="overview" class="overview">
         <div class="container">
-            <h2>我的项目</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200" alt="项目1">
+            <h2>为什么需要这款飞行模拟系统？</h2>
+            <div class="overview-content">
+                <div class="overview-card traditional">
+                    <div class="card-icon">
+                        <i class="fas fa-cog"></i>
                     </div>
-                    <div class="project-content">
-                        <h3>项目名称1</h3>
-                        <p>这是一个项目的简短描述，介绍项目的功能和技术栈。</p>
-                        <a href="#" class="btn btn-secondary">查看详情</a>
+                    <h3>传统飞行模拟痛点</h3>
+                    <p>仅关注机械操作，忽视环境/生理干扰对飞行员的影响</p>
+                </div>
+                <div class="overview-card our-solution">
+                    <div class="card-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>我们的解决方案</h3>
+                    <p>基于生理干扰的沉浸式模拟，还原罕见、高风险紧急场景，兼顾专业训练与公众教育</p>
+                </div>
+                <div class="overview-card value">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>核心价值</h3>
+                    <p>安全、精准、可评估、强沉浸</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 应用场景板块 -->
+    <section id="scenarios" class="scenarios">
+        <div class="container">
+            <h2>两大核心应用场景</h2>
+            <div class="scenarios-grid">
+                <div class="scenario-card">
+                    <div class="scenario-image">
+                        <img src="图片/专业飞行训练.png" alt="专业飞行训练">
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-icon">
+                            <i class="fas fa-pilot"></i>
+                        </div>
+                        <h3>专业飞行训练</h3>
+                        <ul>
+                            <li><strong>目标用户：</strong>现役飞行员、专业飞行学员</li>
+                            <li><strong>核心需求：</strong>高物理还原度、精准系统故障模拟</li>
+                            <li><strong>核心目的：</strong>熟练应对罕见/复合型紧急情况的标准程序与决策流程</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scenario-card">
+                    <div class="scenario-image">
+                        <img src="图片/公共航天教育.png" alt="公众航天教育">
+                    </div>
+                    <div class="scenario-content">
+                        <div class="scenario-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>公众航天教育</h3>
+                        <ul>
+                            <li><strong>目标用户：</strong>青少年、航空爱好者、普通公众、相关专业学生</li>
+                            <li><strong>核心需求：</strong>视觉沉浸感、流畅交互、智能引导</li>
+                            <li><strong>核心目的：</strong>普及航天知识、激发兴趣、提供安全有趣的沉浸式体验</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心功能板块 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>三大核心交互 + 三大核心功能</h2>
+            
+            <h3 class="section-subtitle">核心交互</h3>
+            <div class="interactions-grid">
+                <div class="interaction-card">
+                    <div class="interaction-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h4>基础控制交互</h4>
+                    <p>支持键盘/摇杆/VR控制器，实现俯仰、偏航操作</p>
+                    <div class="interaction-image">
+                        <img src="图片/基础控制交互.png" alt="基础控制交互">
+                    </div>
+                </div>
+                <div class="interaction-card">
+                    <div class="interaction-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h4>背景参数交互</h4>
+                    <p>可自定义调节天气（晴/阴/雨/雪）、视觉参数（模糊/昏暗/色散）、听觉参数（耳鸣）</p>
+                    <div class="interaction-image">
+                        <img src="图片/背景参数交互.png" alt="背景参数交互">
+                    </div>
+                </div>
+                <div class="interaction-card">
+                    <div class="interaction-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h4>场景碰撞交互</h4>
+                    <p>真实物理碰撞模拟，碰撞后自动跳转AI评估报告</p>
+                    <div class="interaction-image">
+                        <img src="图片/场景碰撞交互.png" alt="场景碰撞交互">
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-subtitle">核心功能</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h4>模块化天气/故障系统</h4>
+                    <p>支持多种天气、故障组合，跨场景持久化存储设置</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <h4>穿越圆环任务</h4>
+                    <p>实时计算穿越精度、碰撞次数，动态更新评分</p>
+                    <div class="feature-image">
+                        <img src="图片/穿越圆环任务.png" alt="穿越圆环任务">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>AI智能评估报告</h4>
+                    <p>生成可视化报告（事件类型、紧张指数、飞行分数），提供针对性改进建议</p>
+                    <div class="feature-image">
+                        <img src="图片/AI智能评估.png" alt="AI智能评估报告">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术亮点板块 -->
+    <section id="tech" class="tech">
+        <div class="container">
+            <h2>技术驱动，还原真实紧急体验</h2>
+            
+            <div class="tech-content">
+                <div class="tech-section">
+                    <h3>沉浸感解决方案</h3>
+                    <p>解决前庭觉冲突+触觉反馈缺失</p>
+                    <div class="tech-details">
+                        <div class="tech-item">
+                            <h4>视觉强化</h4>
+                            <p>粒子特效（雨/雪）、动态模糊、UI抖动</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>听觉强化</h4>
+                            <p>多层次音效（耳鸣/轰鸣/警告声），随故障严重程度动态混合</p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200" alt="项目2">
-                    </div>
-                    <div class="project-content">
-                        <h3>项目名称2</h3>
-                        <p>这是另一个项目的简短描述，介绍项目的功能和技术栈。</p>
-                        <a href="#" class="btn btn-secondary">查看详情</a>
+                <div class="tech-section">
+                    <h3>核心技术栈</h3>
+                    <div class="tech-stack">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Unity 3D</span>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-vr-cardboard"></i>
+                            <span>XR Interaction Toolkit</span>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-plane"></i>
+                            <span>NWH Aerodynamics插件</span>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Deepseek API接口</span>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-keyboard"></i>
+                            <span>多设备输入兼容</span>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/300x200" alt="项目3">
-                    </div>
-                    <div class="project-content">
-                        <h3>项目名称3</h3>
-                        <p>这是第三个项目的简短描述，介绍项目的功能和技术栈。</p>
-                        <a href="#" class="btn btn-secondary">查看详情</a>
+                <div class="tech-section">
+                    <h3>系统交互逻辑图</h3>
+                    <div class="system-diagram">
+                        <img src="图片/系统交互逻辑.png" alt="系统交互逻辑图">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <!-- 演示中心板块 -->
+    <section id="demo" class="demo">
         <div class="container">
-            <h2>关于我</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/200x200" alt="个人头像">
-                </div>
-                <div class="about-text">
-                    <p>我是一名热爱技术的开发者，拥有X年的开发经验。我擅长使用HTML、CSS、JavaScript、React等技术栈进行前端开发，同时也熟悉后端技术如Node.js、Python等。</p>
-                    <p>我喜欢解决问题，不断学习新技术，并将其应用到实际项目中。我的目标是成为一名全栈开发者，能够独立完成整个项目的开发和部署。</p>
+            <h2>VR沉浸式演示</h2>
+            <div class="demo-content">
+                <div class="demo-video">
+                    <div class="video-container">
+                        <video controls>
+                            <source src="图片/VR视角视频.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <p>佩戴VR眼镜可获得完整沉浸体验</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>联系方式</h2>
-            <div class="contact-info">
-                <p>如果您对我的项目感兴趣，或者有任何合作机会，欢迎通过以下方式联系我：</p>
-                <ul>
-                    <li>邮箱：your.email@example.com</li>
-                    <li>GitHub：<a href="#">github.com/yourusername</a></li>
-                    <li>LinkedIn：<a href="#">linkedin.com/in/yourusername</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
-    <footer>
+
+    <!-- 页脚 -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 我的个人网站. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">
+                        <i class="fas fa-plane"></i>
+                    </span>
+                    <span class="logo-text">FlightSim Pro</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">首页</a>
+                    <a href="#overview">项目概述</a>
+                    <a href="#features">核心功能</a>
+                    <a href="#demo">演示中心</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 飞行模拟项目 版权所有</p>
+            </div>
         </div>
     </footer>
 
